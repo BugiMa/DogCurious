@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/curioListFragment">
+
+    <fragment
+        android:id="@+id/curioListFragment"
+        android:name="com.example.dogcurious.ui.CurioListFragment"
+        android:label="fragment_curio_list"
+        tools:layout="@layout/fragment_curio_list" >
+        <action
+            android:id="@+id/action_curioListFragment_to_curioDetailsFragment"
+            app:destination="@id/curioDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/curioDetailsFragment"
+        android:name="com.example.dogcurious.ui.main.CurioDetailsFragment"
+        android:label="fragment_curio_details"
+        tools:layout="@layout/fragment_curio_details" />
+</navigation>
